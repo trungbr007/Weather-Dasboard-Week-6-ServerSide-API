@@ -1,0 +1,29 @@
+
+
+header{
+  margin: 10px;
+    padding: 10px;
+
+}
+
+
+
+
+.weather{  
+    border: 1px solid black;
+}
+
+.days-forecast{
+    margin-left: 10px;
+    text-align: left;
+}
+
+#display-weather{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.weather-info{
+    list-style-type: none;
+    padding-left: 5px;
+}
