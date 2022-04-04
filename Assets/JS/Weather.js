@@ -35,7 +35,7 @@ searchBtn.addEventListener('click',function(){
     wind.innerHTML="Wind: "+data.list[0].wind.speed;
     cityName.innerHTML=data.city.name + " "+date;
 
-
+    displayWeather.innerHTML = "";
 
 for(i=1;i<=5;i++){
     var card= document.createElement('div');

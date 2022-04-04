@@ -11,5 +11,5 @@ Having some issues, I cannot change the date automically but the others are corr
 * Deployed link: https://trungbr007.github.io/Weather-Dasboard-Week-6-ServerSide-API/
 
 
-<img src="./Screen Shot 2022-04-04 at 2.42.53 AM.png">
+<img src="./Screen Shot 2022-04-04 at 12.07.09 PM.png">
 
