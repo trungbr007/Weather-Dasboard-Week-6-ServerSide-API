@@ -64,10 +64,6 @@ for(i=1;i<=5;i++){
     windForecast.innerHTML="Wind: "+data.list[0].wind.speed;
     dateForecast.innerHTML= new Date (data.list[i].dt *1000);
 
-    
-    
-
-
 
     displayWeather.appendChild(card);
   

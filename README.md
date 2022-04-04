@@ -8,5 +8,5 @@ However, I figured out I can only get current date information. It meant I do no
 * Deployed link: https://trungbr007.github.io/Weather-Dasboard-Week-6-ServerSide-API/
 
 
-<img src="./Screenshot.png">
+<img src="./Screen Shot 2022-04-04 at 2.42.53 AM.png">
 
