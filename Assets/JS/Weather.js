@@ -7,7 +7,7 @@ var weather=document.getElementById('weather');
 var temp=document.getElementById('temp');
 var humidity=document.getElementById('humidity');
 var wind=document.getElementById('wind');
-
+var displayCity=document.getElementById('display-city');
 var displayWeather=document.getElementById('display-weather');
 var day1=document.getElementById("1");
 var day2=document.getElementById("2");
@@ -52,22 +52,32 @@ for(i=1;i<=5;i++){
     var iconCode=data.list[i].weather[0].icon;
     var iconURL= "http://openweathermap.org/img/wn/"+iconCode+"@2x.png";
 
+    
+
     card.appendChild(dateForecast);
     card.appendChild(iconForecast);
     card.appendChild(tempForecast);
     card.appendChild(humidityForecast);
     card.appendChild(windForecast);
 
+    card.setAttribute('style','background-color: lightyellow; margin:10px;border-radius:10px;border:1px solid;text-align:center');
     iconForecast.setAttribute('src',iconURL);
-    tempForecast.innerHTML="Temp: "+ Math.floor((parseInt(data.list[0].main.temp)-272.15)).toString() + "°C";
-    humidityForecast.innerHTML="Humidity: " + data.list[0].main.humidity
-    windForecast.innerHTML="Wind: "+data.list[0].wind.speed;
-    dateForecast.innerHTML= new Date (data.list[i].dt *1000);
+    tempForecast.innerHTML="Temp: "+ Math.floor((parseInt(data.list[i].main.temp)-272.15)).toString() + "°C";
+    humidityForecast.innerHTML="Humidity: " + data.list[i].main.humidity
+    windForecast.innerHTML="Wind: "+data.list[i].wind.speed;
+    dateForecast.innerHTML= new Date (data.list[i].dt*1000);
 
 
     displayWeather.appendChild(card);
   
 
+//local storage
+
+// var storeCityName= document.createElement('li');
+
+// localStorage.setItem(inputValue,text);
+// storeCityName.val(localStorage.getItem('9'));
+// displayCity.appendChild(storeCityName);
 }
   
 
