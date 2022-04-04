@@ -78,13 +78,10 @@ displayCity.appendChild(storeCityName);
 
 
 
-localStorage.setItem(storeCityName);
-storeCityName.val(localStorage.getItem('storeCityName'));
+localStorage.setItem(storeCityName," ");
+// storeCityName.val(localStorage.getItem('storeCityName'));
+displayCity.localStorage.getItem('storeCityName');
 
-
-  
-
-    
 })
 
 .catch(err=>console.log(err))
