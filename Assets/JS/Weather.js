@@ -36,11 +36,6 @@ searchBtn.addEventListener('click',function(){
     cityName.innerHTML=data.city.name + " "+date;
 
 
-    // day1.innerHTML=data.list[0].weather.icon[0];
-// day2.innerHTML=data.list[1].weather.icon[1];
-// day3.innerHTML=data.list[2].weather.icon[2];
-// day4.innerHTML=data.list[3].weather.icon[3];
-// day5.innerHTML=data.list[4].weather.icon[4];
 
 for(i=1;i<=5;i++){
     var card= document.createElement('div');
@@ -70,15 +65,23 @@ for(i=1;i<=5;i++){
 
     displayWeather.appendChild(card);
   
+    
 
+};
 //local storage
 
-// var storeCityName= document.createElement('li');
+var storeCityName= document.createElement('li');
+storeCityName.innerHTML=inputValue.value;
+console.log(inputValue)
+storeCityName.setAttribute('style','list-style-type: none;border:1px solid black;background-color:lightgrey;border-radius:10px;margin:20px;padding 5px;text-align:center;')
+displayCity.appendChild(storeCityName);
 
-// localStorage.setItem(inputValue,text);
-// storeCityName.val(localStorage.getItem('9'));
-// displayCity.appendChild(storeCityName);
-}
+
+
+localStorage.setItem(storeCityName);
+storeCityName.val(localStorage.getItem('storeCityName'));
+
+
   
 
     
@@ -87,6 +90,7 @@ for(i=1;i<=5;i++){
 .catch(err=>console.log(err))
 
 });
+
 
 
 
