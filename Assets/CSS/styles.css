@@ -22,8 +22,17 @@ header{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    
+    
 }
 .weather-info{
     list-style-type: none;
     padding-left: 5px;
+}
+
+img{
+    background-color: cornflowerblue;
+    justify-content:space-between;
+    border-radius: 10px;
+    font-size: 1px;
 }
